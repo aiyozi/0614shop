@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Redis;
 class GoodsController extends Controller
 {
     public function index($id){
+        echo"woc";
         $count=Redis::setnx("visit_".$id,1)?1:Redis::incr("visit_".$id);
         // dd($count);
        $goods= Goods::find($id);
