@@ -1,0 +1,1 @@
+<h3><font color="red">你的验证码{{$code}}请勿泄露哟</font></h3>
